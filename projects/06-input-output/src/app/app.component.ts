@@ -11,7 +11,7 @@ import {ListingComponent} from "./listing/listing.component";
 		<h1>Saved Cars {{ savedCarList.length }}</h1>
 		<section class="container">
 			@for(car of carList; track car){
-			<app-listing [car]="car" (saveItemEvent)="saveCarItem($event)" />
+			<app-listing [car]="car" (saveItemEvent)="($event)" />
     }
 		</section>
 	`,
